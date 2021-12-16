@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Scroll Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <h2>Createive Scroll Progress Bar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora vero saepe dolore quae aliquam aut molestias impedit, illum odit nostrum natus, nam magnam ratione dolorem nesciunt omnis eos ipsum!</p>
+    </section>
+</body>
+<script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function() {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+</script>
+</html>
